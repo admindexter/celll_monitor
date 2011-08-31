@@ -2,10 +2,18 @@ require 'spec_helper'
 
 describe PagesController do
 
+  render_views
+
   describe "GET 'home'" do
     it "should be successful" do
       get 'home'
       response.should be_success
+    end
+
+    it "should have the right title" do
+      get 'home'
+      response.should have_selector("title",
+                        :content => "Celll Monitor Development App | Home")
     end
   end
 
@@ -14,12 +22,26 @@ describe PagesController do
       get 'contact'
       response.should be_success
     end
+
+    it "should have the right title" do
+      get 'contact'
+      response.should have_selector("title",
+                        :content =>
+                          "Celll Monitor Development App | Contact")
+    end
   end
 
-  describe "GET 'faq'" do
+  describe "GET 'about'" do
     it "should be successful" do
-      get 'faq'
+      get 'about'
       response.should be_success
+    end
+
+    it "should have the right title" do
+      get 'about'
+      response.should have_selector("title",
+                        :content =>
+                          "Celll Monitor Development App | About")
     end
   end
 
@@ -28,6 +50,27 @@ describe PagesController do
       get 'help'
       response.should be_success
     end
+
+    it "should have the right title" do
+      get 'help'
+      response.should have_selector("title",
+                        :content => "Celll Monitor Development App | Help")
+    end
+  end
+
+  describe "GET 'faq'" do
+    it "should be successful" do
+      get 'faq'
+      response.should be_success
+    end
+
+    it "should have the right title" do
+      get 'faq'
+      response.should have_selector("title",
+                        :content =>
+                          "Celll Monitor Development App | Faq")
+    end
   end
 
 end
+
