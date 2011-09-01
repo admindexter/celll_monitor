@@ -1,0 +1,590 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background:									white url(../images/body.jpg) repeat-x left top;
+	margin: 											0;
+	padding: 										0;
+	color: 											#000;
+	font-family: 									"Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	font-size: 										100%;
+	line-height: 									1.4;
+}
+
+#login_div {
+	height:											39px;
+	background: 									url(../images/login_div.jpg) repeat-x left top;
+}
+
+#login_div_links_holder {
+	width:											1000px;
+	height:											39px;
+	margin:											0 auto;
+	line-height: 									39px;
+	color:												white;
+	font-size: 										14px;
+}
+
+#login_div_links_holder a {
+	color:												white;
+	text-decoration:								underline;
+}
+
+#login_div_links_holder a:hover {
+	color:											white;
+	text-decoration:								none;
+}
+
+#logo_div {
+	height:											122px;
+	background: 									url(../images/logo_div.jpg) repeat-x;
+}
+
+#logo_div_middle {
+	width:											1000px;
+	height:											122px;
+	margin:											0 auto;
+	background: 									url(../images/logo_div_logo.jpg) no-repeat left;
+}
+
+#logo_div_logo {
+	width:											482px;
+	height:											122px;
+	float:												left;
+}
+
+#logo_div_2 {
+	width:											37px;
+	height:											122px;
+	float:												left;
+}
+
+#logo_div_counter {
+	width:											439px;
+	height:											122px;
+	float:												left;
+	background: 									url(../images/logo_div_counter.jpg) no-repeat left;
+}
+
+#top_navigation_div {
+	height:											46px;
+	background: 									url(../images/top_navigation_div.jpg) repeat-x left;
+}
+
+#top_navigation_middle_div {
+	width:											1000px;
+	margin:											0 auto;
+	height:											46px;
+	background: 									url(../images/top_navigation_middle_div.jpg) repeat-x left;
+}
+
+#top_navigation_left_div {
+	width:											14px;
+	height:											46px;
+	background: 									url(../images/top_navigation_left_div.jpg) no-repeat;
+	float:												left;
+}
+
+.button {
+	display:											block;
+	width:											85px;
+	height:											46px;
+	float:												left;
+	font: 												14px/46px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align: 										center;
+	color: 											#203c48;
+}
+
+.button a {
+	display:											block;
+	width:											85px;
+	height:											46px;
+	color: 											#203c48;
+	text-decoration:								none;
+}
+
+.button a:hover {
+	width:											85px;
+	height:											46px;
+	display:											block;
+	color: 											white;
+	text-decoration:								none;
+	background: 									url(../images/top_navigation_div_highlight.jpg) repeat-x left;
+}
+
+#top_navigation_space_div {
+	width:											6px;
+	height:											46px;
+	float:												left;
+}
+
+#top_navigation_search_div {
+	width:											286px;
+	height:											46px;
+	background: 									url(../images/top_navigation_search_div.jpg) no-repeat;
+	float:												left;
+}
+
+#top_navigation_right_div {
+	width:											14px;
+	height:											46px;
+	float:												left;
+	background: 									url(../images/top_navigation_right_div.jpg) no-repeat;
+}
+
+#second_navigation {
+	height:											34px;
+	background: 									url(../images/second_navigation.jpg) repeat-x left;
+}
+
+#second_navigation_middle {
+	width:											1000px;
+	margin:											0 auto;
+	height:											34px;
+	background: 									url(../images/second_navigation_middle.jpg) repeat-x left;
+}
+
+#second_navigation_middle_left {
+	width:											14px;
+	height:											34px;
+	background: 									url(../images/second_navigation_middle_left.jpg) no-repeat;
+	float:												left;
+}
+
+#second_navigation_home {
+	width:											34px;
+	height:											34px;
+	background: 									url(../images/second_navigation_home.jpg) no-repeat;
+	float:												left;
+}
+
+#second_navigation_middle_center {
+	width:											938px;
+	height:											34px;
+	float:												left;
+}
+
+#second_navigation_middle_right {
+	width:											14px;
+	height:											34px;
+	background: 									url(../images/second_navigation_middle_right.jpg) no-repeat;
+	float:												left;
+}
+
+#space_navigation_content {
+	height:											16px;
+	background: 									url(../images/space_navigation_content.jpg) repeat-x left;
+}
+
+#content_base {
+	background: 									url(../images/content_base.jpg) repeat-x left bottom;
+	clear:												left;
+}
+
+#content {
+	background: 									url(../images/content.jpg) repeat-x left top;
+	clear:												left;
+}
+
+.footer_top_gap {
+	height:											10px;
+	clear:												left;
+}
+
+#footer {
+	height:											712px;
+	background: 									url(../images/footer.jpg) repeat-x left top;
+	clear:												left;
+}
+
+#footer_top {
+	background: 									url(../images/footer_top.jpg) no-repeat center top;
+	height: 											170px;
+	width: 											1000px;
+	margin: 											0 auto;
+}
+
+#footer_navigation {
+	background: 									url(../images/footer_navigation.jpg) no-repeat center top;
+	height: 											51px;
+	width: 											1000px;
+	margin: 											0 auto;
+}
+
+.footer_button {
+	display:											block;
+	width:											125px;
+	height: 											51px;
+	float:												left;
+	font: 												14px/51px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align: 										center;
+	color: 											white;
+}
+
+#footer_space_text {
+	background: 									url(../images/footer_space_text.jpg) no-repeat center;
+	height: 											49px;
+	width: 											1000px;
+	margin:											0 auto;
+}
+
+#footer_content {
+	background:									url(../images/footer_logo_small.jpg) no-repeat center bottom;
+	height: 											383px;
+	width: 											1000px;
+	margin:											0 auto;
+}
+
+.footer_button a {
+	display:											block;
+	width:											125px;
+	height: 											51px;
+	color: 											white;
+	text-decoration:								none;
+	font-weight: 									bold;
+}
+
+.footer_button a:hover {
+	display:											block;
+	color: 											#614918;
+	text-decoration:								none;
+	font-weight: 									bold;
+	background: 									url(../images/footer_button_highlight.jpg);
+}
+
+#title_bar {
+	background: 									url(../images/title_bar.jpg) repeat-x left;
+	height: 											68px;
+	width: 											975px;
+	margin:											0 auto;
+}
+
+#title {
+	background: 									url(../images/title.jpg) no-repeat left top;
+	float:												left;
+	height: 											68px;
+	width:											400px;
+}
+
+#title_middle {
+	float:												left;
+	height: 											68px;
+	width:											548px;
+}
+
+#title_right {
+	background: 									url(../images/title_bar_right.jpg) no-repeat left top;
+	float:												left;
+	height: 											68px;
+	width:											27px;
+}
+
+#fieldset_title {
+	background: 									url(../images/fieldset_title.jpg) repeat-x left;
+	height: 											58px;
+	width:											975px;
+	margin:											0 auto;
+}
+
+#fieldset_member_icon {
+	background: 									url(../images/fieldset_member_icons.jpg) no-repeat left top;
+	float: 											left;
+	height: 											58px;
+	width: 											72px;
+}
+
+#fieldset_middle {
+	float: 											left;
+	height: 											58px;
+	width: 											876px;
+}
+
+#fieldset_right {
+	background: 									url(../images/fieldset_right.jpg) no-repeat left top;
+	float: 											left;
+	height: 											58px;
+	width: 											27px;
+}
+
+#fieldset_body {
+	background: 									yellow;
+	margin: 											0px auto;
+	width: 											975px;
+}
+
+.fieldset_body_left {
+	background: 									url(../images/filedset_body_left.jpg) no-repeat left top;
+	float:												left;
+	height: 											191px;
+	width: 											13px;
+}
+
+#fieldset_body_middle {
+	background: 									white url(../images/fieldset_body_middle.jpg) repeat-x;
+	float: 											left;
+	height: 											500px;
+	width: 											947px;
+	border: 											1px solid #e7e7e7;
+}
+
+.available {
+	height:											404px;
+	clear:												left;
+}
+
+.available_header {
+	height:											58px;
+	width:											949px;
+	margin:											0 auto;
+	background:									url(../images/fieldset_title.jpg) repeat-x left top;
+	clear:												left;
+}
+
+.available_body {
+	height:											345px;
+	width:											947px;
+	margin:											0 auto;
+	background: 									white url(../images/fieldset_body_middle.jpg) repeat-x;
+	clear:												left;
+	border: 											1px solid #e7e7e7;
+}
+
+.photos_left_space {
+	height:											345px;
+	width:											28px;
+	float:												left;
+}
+
+.photos_span {
+	height:											345px;
+	width:											890px;
+	float:												left;
+}
+
+.photos_span_top {
+	height:											40px;
+	width:											890px;
+}
+
+.photos_span_main   {
+	width:											890px;
+}
+
+.photo {
+	background: 									url(../images/available_photo_frame.jpg) no-repeat left top;
+	float: 											left;
+	height: 											130px;
+	width: 											108px;
+}
+
+.photo_gap {
+	float: 											left;
+	height: 											130px;
+	width: 											3px;
+}
+
+.available_header_member_icon {
+	background: 									url(../images/available_header_member_icon.jpg) no-repeat left top;
+	float: 											left;
+	height: 											58px;
+	width: 											60px;
+}
+
+.available_header_title {
+	float: 											left;
+	height: 											58px;
+	width: 											400px;
+}
+
+.available_header_right {
+	background: 									url(../images/available_header_right.jpg) no-repeat right top;
+	float: 											left;
+	height: 											58px;
+	width: 											489px;
+}
+
+.available_header_button {
+	float: 											left;
+	height: 											58px;
+	width: 											263px;
+}
+
+.available_header_button a {
+	display:											block;
+	height: 											58px;
+	width: 											263px;
+	background: 									url(../images/available_header_button.jpg) no-repeat left top;
+	font: 												bold 14px/58px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: 											#271e0d;
+	text-decoration:								none;
+	text-align: 										center;
+	text-transform: 								uppercase;
+}
+
+.available_header_button a:hover {
+	display:											block;
+	height: 											58px;
+	width: 											263px;
+	background: 									url(../images/available_header_button_hightlight.jpg) no-repeat left top;
+	font: 												bold 14px/58px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: 											white;
+	text-decoration:								none;
+}
+
+.available_header_button_left {
+	float: 											left;
+	height: 											58px;
+	width: 											213px;
+}
+
+.profile_picture_top {
+	height: 											9px;
+	width: 											108px;
+}
+
+.profile_picture_span_left {
+	float: 											left;
+	height: 											9px;
+	width: 											8px;
+}
+
+.profile_picture_span {
+	float: 											left;
+}
+
+#previous {
+	width:											260px;
+	height:											52px;
+	background:									url(../images/previous.jpg) no-repeat top left;
+	float:												left;
+	font: 												normal normal 16px/52px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: 											white;
+	text-align: 										center;
+}
+
+#previous a {
+	width:											260px;
+	height:											52px;
+	background:									url(../images/previous.jpg) no-repeat top left;
+	float:												left;
+	font: 												normal normal 16px/52px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: 											white;
+	text-align: 										center;
+	display:											block;
+	text-decoration:								none;
+}
+
+#previous a:hover {
+	width:											260px;
+	height:											52px;
+	background:									url(../images/previous_hover.jpg) no-repeat top left;
+	float:												left;
+	font: 												normal normal 16px/52px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: 											#141756;
+	text-align: 										center;
+	display:											block;
+	text-decoration:								none;
+}
+
+#next {
+	width:											260px;
+	height:											52px;
+	background:									url(../images/next.jpg) no-repeat top left;
+	float:												left;
+	font: 												normal normal 16px/52px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: 											white;
+	text-align: 										center;
+	text-decoration:								none;
+}
+
+#next a {
+	width:											260px;
+	height:											52px;
+	background:									url(../images/next.jpg) no-repeat top left;
+	float:												left;
+	font: 												normal normal 16px/52px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: 											white;
+	text-align: 										center;
+	display:											block;
+	text-decoration:								none;
+}
+
+#next a:hover {
+	width:											260px;
+	height:											52px;
+	background:									url(../images/next_hover.jpg) no-repeat top left;
+	float:												left;
+	font: 												normal normal 16px/52px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: 											#141756;
+	text-align: 										center;
+	display:											block;
+}
+
+#pagination {
+	width:											753px;
+	height:											52px;
+	background:									url(../images/pagination.jpg) repeat-x left top;
+	margin:											0 auto;
+	clear:												left;
+}
+
+.pagination_space {
+	width:											5px;
+	height:											52px;
+	float:												left;
+	background:									url(../images/pagination.jpg) repeat-x left top;
+}
+
+.pagination_button {
+	width:											52px;
+	height:											52px;
+	float:												left;
+	font: 												normal 14px/52px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: 											#e00102;
+	text-align: 										center;
+	background:									url(../images/pagination.jpg) repeat-x left top;
+}
+
+.pagination_button a {
+	display:											block;
+	width:											52px;
+	height:											52px;
+	float:												left;
+	font: 												normal 14px/52px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: 											#e00102;
+	text-align: 										center;
+	background:									url(../images/pagination.jpg) repeat-x left top;
+	text-decoration:								none;
+}
+
+.pagination_button a:hover {
+	display:											block;
+	width:											52px;
+	height:											52px;
+	float:												left;
+	font: 												normal 14px/52px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: 											#141756;
+	text-align: 										center;
+	background: 									url(../images/pagination_hover.jpg) repeat-x left top;
+	text-decoration:								none;
+}
+
+.pagination_button_present {
+	width:											52px;
+	height:											52px;
+	float:												left;
+	font: 												normal 14px/52px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: 											#141756;
+	text-align: 										center;
+	background: 									url(../images/pagination_hover.jpg) repeat-x left top;
+}
+
+#copyright {
+	height: 											59px;
+	width: 											500px;
+	margin:											0 auto;
+	font: 												normal 12px/59px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-transform: 								capitalize;
+	color: 											#FFF;
+	text-align: 										center;
+}
