@@ -1,7 +1,11 @@
 class PagesController < ApplicationController
 
+  layout 'general'
+
   def home
     @title = "Home"
+
+    render :layout => "home"
   end
 
   def contact
@@ -18,6 +22,26 @@ class PagesController < ApplicationController
 
   def about
     @title = "About"
+  end
+
+  def community
+    @title = "Community"
+  end
+
+  def gallery
+    @title = "Gallery"
+  end
+
+  def multimedia
+    @title = "Multimedia"
+  end
+
+  def ranking
+    @title = "Ranking"
+  end
+
+  def blog
+    @title = "Blog"
   end
 
 end

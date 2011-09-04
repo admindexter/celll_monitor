@@ -9,6 +9,18 @@ CelllMonitor::Application.routes.draw do
 
   get "pages/about"
 
+  get "pages/community"
+
+  get "pages/gallery"
+
+  get "pages/multimedia"
+
+  get "pages/ranking"
+
+  get "pages/blog"
+
+  root :to => "pages#home"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

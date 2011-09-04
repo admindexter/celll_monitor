@@ -78,5 +78,70 @@ describe PagesController do
     end
   end
 
+  describe "GET 'community'" do
+    it "should be successful" do
+      get 'community'
+      response.should be_success
+    end
+
+    it "should have the right title" do
+      get 'community'
+      response.should have_selector("title",
+                                    :content => @base_title + " | Community")
+    end
+  end
+
+  describe "GET 'gallery'" do
+    it "should be successful" do
+      get 'gallery'
+      response.should be_success
+    end
+
+    it "should have the right title" do
+      get 'gallery'
+      response.should have_selector("title",
+                                    :content => @base_title + " | Gallery")
+    end
+  end
+
+  describe "GET 'multimedia'" do
+    it "should be successful" do
+      get 'multimedia'
+      response.should be_success
+    end
+
+    it "should have the right title" do
+      get 'multimedia'
+      response.should have_selector("title",
+                                    :content => @base_title + " | Multimedia")
+    end
+  end
+
+  describe "GET 'ranking'" do
+    it "should be successful" do
+      get 'ranking'
+      response.should be_success
+    end
+
+    it "should have the right title" do
+      get 'ranking'
+      response.should have_selector("title",
+                                    :content => @base_title + " | Ranking")
+    end
+  end
+
+  describe "GET 'blog'" do
+    it "should be successful" do
+      get 'blog'
+      response.should be_success
+    end
+
+    it "should have the right title" do
+      get 'blog'
+      response.should have_selector("title",
+                                    :content => @base_title + " | Blog")
+    end
+  end
+
 end
 
