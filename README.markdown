@@ -20,5 +20,5 @@ http://simple-ocean-18.heroku.com/pages/home
 
 
 # Celll-Monitor: repository
-git@github.com:admindexter/celll_monitor.git
+https://github.com/admindexter/celll_monitor
 
