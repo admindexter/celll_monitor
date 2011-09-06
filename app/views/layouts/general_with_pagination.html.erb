@@ -1,0 +1,415 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title><%= title %></title>
+<%= csrf_meta_tag %>
+<%= stylesheet_link_tag 'general', :media => 'screen' %>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div id="login_div">
+
+      <div id="login_div_links_holder">Hi Guest, <a href="">Log in as a Celll-Monitor member</a> | <a href="">Sign up as a Celll-Monitor member</a>
+      <!-- end #login_div_links_holder --></div>
+
+  <!-- end #login_div --></div>
+
+  <div id="logo_div">
+
+      <div id="logo_div_middle">
+
+      	<span id="logo_div_logo">
+
+      	  <%= image_tag("logo_div_logo.jpg") %>
+
+        <!-- #logo_div_logo --></span>
+
+      	<span id="logo_div_2">
+        <!-- #logo_div_2 --></span>
+
+      	<span id="logo_div_counter">
+        <!-- #logo_div_counter --></span>
+
+      <!-- end #logo_div_middle --></div>
+
+  <!-- end #logo_div --></div>
+
+      <div id="top_navigation_div">
+
+          <div id="top_navigation_middle_div">
+
+              <span id="top_navigation_left_div">
+              <!-- end #top_navigation_left_div --></span>
+
+              <span class="button"><a href="">Community</a>
+              <!-- end .button --></span>
+
+              <span class="button"><a href="">FAQ</a>
+              <!-- end .button --></span>
+
+              <span class="button"><a href="">Gallery</a>
+              <!-- end .button --></span>
+
+              <span class="button"><a href="">Multimedia</a>
+              <!-- end .button --></span>
+
+              <span class="button"><a href="">Help</a>
+              <!-- end .button --></span>
+
+              <span class="button"><a href="">Rankings</a>
+              <!-- end .button --></span>
+
+              <span class="button"><a href="">Blogs</a>
+              <!-- end .button --></span>
+
+              <span class="button"><a href="">Contact</a>
+              <!-- end .button --></span>
+
+              <span id="top_navigation_space_div">
+              <!-- end #top_navigation_space_div --></span>
+
+              <span id="top_navigation_search_div">
+              <!-- end #top_navigation_search_div --></span>
+
+              <span id="top_navigation_right_div">
+              <!-- end #top_navigation_right_div --></span>
+
+          <!-- end #top_navigation_middle_div --></div>
+
+      <!-- end #top_navigation_div --></div>
+
+      <div id="second_navigation">
+
+          <div id="second_navigation_middle">
+
+              <span id="second_navigation_middle_left">
+              <!-- end #second_navigation_middle_left --></span>
+
+              <span id="second_navigation_home">
+              <!-- end #second_navigation_home --></span>
+
+              <span id="second_navigation_middle_center">
+              <!-- end #second_navigation_middle_center --></span>
+
+              <span id="second_navigation_middle_right">
+              <!-- end #second_navigation_middle_right --></span>
+
+          <!-- end #second_navigation_middle --></div>
+
+      <!-- end #second_navigation --></div>
+
+      <div id="space_navigation_content">
+      <!-- end #space_navigation_content --></div>
+
+      <div id="content_base">
+
+          <div id="content">
+
+              <div id="title_bar">
+
+                  <span id="title">
+                  <!-- end #title --></span>
+
+                  <span id="title_middle">
+                  <!-- end #title_middle --></span>
+
+                  <span id="title_right">
+                  <!-- end #title_right --></span>
+
+              <!-- end #title_bar --></div>
+
+              <div id="fieldset_title">
+
+                  <span id="fieldset_member_icon">
+                  <!-- end #fieldset_member_icon --></span>
+
+                  <span id="fieldset_middle">
+                  <!-- end #fieldset_middle --></span>
+
+                  <span id="fieldset_right">
+                  <!-- end #fieldset_right --></span>
+
+              <!-- end #fieldset_title --></div>
+
+              <div id="fieldset_body">
+
+                  <span class="fieldset_body_left">
+                  <!-- end .fieldset_body_left --></span>
+
+                  <span id="fieldset_body_middle">
+
+                      <div id="fieldset_content"><%= yield %>
+                      <!-- end #fieldset_content --></div>
+
+                      <div id="pagination">
+
+                          <span id="previous"><a href="">Previous</a>
+                          <!-- end #previous --></span>
+
+                          <span class="pagination_space">
+                          <!-- end .pagination_space --></span>
+
+                          <span class="pagination_button"><a href="">1</a>
+                          <!-- end .pagination_button --></span>
+
+                          <span class="pagination_space">
+                          <!-- end .pagination_space --></span>
+
+                          <span class="pagination_button_present">2
+                          <!-- end .pagination_button_present --></span>
+
+                          <span class="pagination_space">
+                          <!-- end .pagination_space --></span>
+
+                          <span class="pagination_button"><a href="">3</a>
+                          <!-- end .pagination_button --></span>
+
+                          <span class="pagination_space">
+                          <!-- end .pagination_space --></span>
+
+                          <span class="pagination_button"><a href="">4</a>
+                          <!-- end .pagination_button --></span>
+
+                          <span class="pagination_space">
+                          <!-- end .pagination_space --></span>
+
+                          <span id="next"><a href="">Next</a>
+                          <!-- end #next --></span>
+
+                      <!-- end #pagination --></div>
+
+                  <!-- end #fieldset_body_middle --></span>
+
+                  <span class="fieldset_body_left">
+                  <!-- end .fieldset_body_left --></span>
+
+              <!-- end #fieldset_body --></div>
+
+      <div class="footer_top_gap">
+      <!-- end .footer_top_gap --></div>
+
+      <div class="available">
+
+          <div class="available_header">
+
+              <span class="available_header_member_icon">
+              <!-- end .available_header_member_icon --></span>
+
+              <span class="available_header_title">
+              <!-- end .available_header_title --><%= image_tag("celll_monitor_members.jpg") %></span>
+
+              <span class="available_header_right">
+
+                  <span class="available_header_button_left">
+                  <!-- end .available_header_button_left --></span>
+
+                  <span class="available_header_button">
+
+                      <a href="">
+
+                      		See More Celll-Monitor Members
+
+                      </a>
+
+                  <!-- end .available_header_button --></span>
+
+              <!-- end .available_header_right --></span>
+
+        <!-- end .available_header --></div>
+
+          <div class="available_body">
+
+              <span class="photos_left_space">
+              <!-- end .photos_left_space --></span>
+
+              <span class="photos_span">
+
+				<div class="photos_span_top">
+                <!-- end .photos_span_top --></div>
+
+				<div class="photos_span_main">
+
+                    <span class="photo">
+
+                        <div class="profile_picture_top">
+                        <!-- end .profile_picture_top --></div>
+
+                        <div class="">
+
+                            <span class="profile_picture_span_left">
+                            <!-- end .profile_picture_span_left --></span>
+
+                            <span class="profile_picture_span">
+
+                            	<img src="images/profile_thumb.jpg" width="92" height="92" />
+
+                            <!-- end .profile_picture_span --></span>
+
+                        <!-- end --></div>
+
+                    <!-- end .photo --></span>
+
+                    <span class="photo_gap">
+                    <!-- end .photo_gap --></span>
+
+                    <span class="photo">
+                    <!-- end .photo --></span>
+
+                    <span class="photo_gap">
+                    <!-- end .photo_gap --></span>
+
+                    <span class="photo">
+                    <!-- end .photo --></span>
+
+                    <span class="photo_gap">
+                    <!-- end .photo_gap --></span>
+
+                    <span class="photo">
+                    <!-- end .photo --></span>
+
+                    <span class="photo_gap">
+                    <!-- end .photo_gap --></span>
+
+                    <span class="photo">
+                    <!-- end .photo --></span>
+
+                    <span class="photo_gap">
+                    <!-- end .photo_gap --></span>
+
+                    <span class="photo">
+                    <!-- end .photo --></span>
+
+                    <span class="photo_gap">
+                    <!-- end .photo_gap --></span>
+
+                    <span class="photo">
+                    <!-- end .photo --></span>
+
+                    <span class="photo_gap">
+                    <!-- end .photo_gap --></span>
+
+                    <span class="photo">
+                    <!-- end .photo --></span>
+
+                    <span class="photo_gap">
+                    <!-- end .photo_gap --></span>
+
+                    <span class="photo">
+                    <!-- end .photo --></span>
+
+                    <span class="photo_gap">
+                    <!-- end .photo_gap --></span>
+
+                    <span class="photo">
+                    <!-- end .photo --></span>
+
+                    <span class="photo_gap">
+                    <!-- end .photo_gap --></span>
+
+                    <span class="photo">
+                    <!-- end .photo --></span>
+
+                    <span class="photo_gap">
+                    <!-- end .photo_gap --></span>
+
+                    <span class="photo">
+                    <!-- end .photo --></span>
+
+                    <span class="photo_gap">
+                    <!-- end .photo_gap --></span>
+
+                    <span class="photo">
+                    <!-- end .photo --></span>
+
+                    <span class="photo_gap">
+                    <!-- end .photo_gap --></span>
+
+                    <span class="photo">
+                    <!-- end .photo --></span>
+
+                    <span class="photo_gap">
+                    <!-- end .photo_gap --></span>
+
+                    <span class="photo">
+                    <!-- end .photo --></span>
+
+                    <span class="photo_gap">
+                    <!-- end .photo_gap --></span>
+
+                    <span class="photo">
+                    <!-- end .photo --></span>
+
+                    <span class="photo_gap">
+                    <!-- end .photo_gap --></span>
+
+                <!-- end .photos_span_main --></div>
+
+              <!-- end .photos_span --></span>
+
+              <span class="photos_left_space">
+              <!-- end .photos_left_space --></span>
+
+          <!-- end .available_body --></div>
+
+      <!-- end .available --></div>
+
+      <div class="footer_top_gap">
+      <!-- end .footer_top_gap --></div>
+
+      <div id="footer">
+
+          <div id="footer_top">
+          <!-- end #footer_top --></div>
+
+          <div id="footer_navigation">
+
+              <span class="footer_button"><a href="">Community</a>
+              <!-- end .footer_button --></span>
+
+              <span class="footer_button"><a href="">FAQ</a>
+              <!-- end .footer_button --></span>
+
+              <span class="footer_button"><a href="">Gallery</a>
+              <!-- end .footer_button --></span>
+
+              <span class="footer_button"><a href="">Multimedia</a>
+              <!-- end .footer_button --></span>
+
+              <span class="footer_button"><a href="">Help</a>
+              <!-- end .footer_button --></span>
+
+              <span class="footer_button"><a href="">Rankings</a>
+              <!-- end .footer_button --></span>
+
+              <span class="footer_button"><a href="">Blogs</a>
+              <!-- end .footer_button --></span>
+
+              <span class="footer_button"><a href="">Contact</a>
+              <!-- end .footer_button --></span>
+
+          <!-- end #footer_navigation --></div>
+
+          <div id="footer_space_text">
+          <!-- end #footer_space_text --></div>
+
+          <div id="footer_content">
+          <!-- end #footer_content --></div>
+
+          <div id="copyright">© MVA Contest, 2011
+          <!-- end #copyright --></div>
+
+      <!-- end #footer --></div>
+
+          <!-- end #content --></div>
+
+      <!-- end #content_base --></div>
+
+<!-- end .container --></div>
+
+</body>
+</html>
+
