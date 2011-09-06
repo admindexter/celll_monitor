@@ -13,85 +13,25 @@
 
       <%= render 'layouts/header' %>
 
-      <div id="second_navigation">
+      <%= render 'layouts/second_navigation' %>
 
-          <div id="second_navigation_middle">
-
-              <span id="second_navigation_middle_left">
-              <!-- end #second_navigation_middle_left --></span>
-
-              <span id="second_navigation_home">
-              <!-- end #second_navigation_home --></span>
-
-              <span id="second_navigation_middle_center">
-              <!-- end #second_navigation_middle_center --></span>
-
-              <span id="second_navigation_middle_right">
-              <!-- end #second_navigation_middle_right --></span>
-
-          <!-- end #second_navigation_middle --></div>
-
-      <!-- end #second_navigation --></div>
-
-      <div id="space_navigation_content">
-      <!-- end #space_navigation_content --></div>
+      <%= render 'layouts/space_navigation_content' %>
 
       <div id="content_base">
 
           <div id="content">
 
-              <div id="title_bar">
+            <%= render 'layouts/title' %>
 
-                  <span id="title">
-                  <!-- end #title --></span>
+            <%= render 'layouts/fieldset' %>
 
-                  <span id="title_middle">
-                  <!-- end #title_middle --></span>
+            <%= render 'layouts/footer_top_gap' %>
 
-                  <span id="title_right">
-                  <!-- end #title_right --></span>
+            <%= render 'layouts/available' %>
 
-              <!-- end #title_bar --></div>
+            <%= render 'layouts/footer_top_gap' %>
 
-              <div id="fieldset_title">
-
-                  <span id="fieldset_member_icon">
-                  <!-- end #fieldset_member_icon --></span>
-
-                  <span id="fieldset_middle">
-                  <!-- end #fieldset_middle --></span>
-
-                  <span id="fieldset_right">
-                  <!-- end #fieldset_right --></span>
-
-              <!-- end #fieldset_title --></div>
-
-              <div id="fieldset_body">
-
-                  <span class="fieldset_body_left">
-                  <!-- end .fieldset_body_left --></span>
-
-                  <span id="fieldset_body_middle">
-
-                      <div id="fieldset_content"><%= yield %>
-                      <!-- end #fieldset_content --></div>
-
-                  <!-- end #fieldset_body_middle --></span>
-
-                  <span class="fieldset_body_left">
-                  <!-- end .fieldset_body_left --></span>
-
-              <!-- end #fieldset_body --></div>
-
-      <div class="footer_top_gap">
-      <!-- end .footer_top_gap --></div>
-
-      <%= render 'layouts/available' %>
-
-      <div class="footer_top_gap">
-      <!-- end .footer_top_gap --></div>
-
-      <%= render 'layouts/footer' %>
+            <%= render 'layouts/footer' %>
 
           <!-- end #content --></div>
 
