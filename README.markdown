@@ -41,5 +41,5 @@ http://simple-ocean-18.heroku.com/
 https://github.com/admindexter/celll_monitor
 
 # Celll-Monitor: first user link
-http://localhost:3000/users/1
+http://simple-ocean-18.heroku.com/users/1
 
