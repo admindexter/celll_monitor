@@ -624,3 +624,73 @@ body {
     margin:                                         0 auto;
 }
 
+.user_container {
+    width:                                          800px;
+    height:                                         108px;
+    margin:                                         0 auto;
+}
+
+.user_content {
+    width:                                          600px;
+    height:                                         108px;
+    float:                                          left;
+}
+
+.user_sidebar {
+    width:                                          200px;
+    height:                                         108px;
+    background:                                     #f3e6cd;
+    float:                                          left;
+}
+
+.user_gravatar {
+    width:                                          108px;
+    height:                                         110px;
+	background: 									url(../images/available_photo_frame.jpg) no-repeat;
+	float:                                          left;
+}
+
+.user_gravatar_top {
+    width:                                          10px;
+    height:                                         9px;
+}
+
+.user_gravatar_left {
+    width:                                          8px;
+    height:                                         10px;
+	float:                                          left;
+}
+
+.user_gravatar_main {
+    width:                                          8px;
+    height:                                         10px;
+	float:                                          left;
+}
+
+.user_top_space {
+    width:                                          800px;
+    height:                                         80px;
+}
+
+.user_gravatar_email_space {
+    width:                                          20px;
+    height:                                         108px;
+    float:                                          left;
+}
+
+.user_email {
+    height:                                         108px;
+    float:                                          left;
+	font: 											normal 20px/108px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.user_email_content {
+	font: 											normal 14px/108px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.user_sidebar_holder {
+    width:                                          150px;
+    margin:                                         0 auto;
+    display:                                        block;
+}
+

@@ -1,2 +1,46 @@
-<%= @user.name %>, <%= @user.email %>
+<div class="user_top_space">
+<!-- .user_top_space --></div>
+
+<div class="user_container">
+
+  <span class="user_content">
+
+    <span class="user_gravatar">
+
+      <div class="user_gravatar_top">
+      <!-- .user_gravatar_top --></div>
+
+      <div class="user_gravatar_image">
+
+        <span class="user_gravatar_left">
+        <!-- .user_gravatar_left --></span>
+
+        <span class="user_gravatar_main">
+          <%= gravatar_for @user %>
+        <!-- .user_gravatar_main --></span>
+
+      <!-- .user_gravatar_image --></div>
+
+    <!-- .user_gravatar --></span>
+
+    <span class="user_gravatar_email_space">
+    <!-- .user_gravatar_email_space --></span>
+
+    <span class="user_email">
+      <%= @user.name %>, <%= content_tag(:span, "#{@user.email}", :class => "user_email_content") %>
+    <!-- .user_email --></span>
+
+  <!-- .user_container --></span>
+
+  <span class="user_sidebar">
+
+    <span class="user_sidebar_holder">
+      <br />
+      <strong>Name</strong> <%= @user.name %><br />
+      <strong>URL</strong>  <%= link_to user_path(@user), @user %>
+    <!-- .user_sidebar_holder --></span>
+
+  <!-- .user_sidebar --></span>
+
+<!-- .user_content --></div>
 

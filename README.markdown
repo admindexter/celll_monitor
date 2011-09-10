@@ -4,31 +4,23 @@ This is the development application for
 [*Celll-Monitor: Raising an army for the Lord*](http://celll-monitor.com/)
 by [Dextersmart Harry](http://dextersmart.com/).
 
-CURRENT PHASE: Filling in the layout
+CURRENT PHASE: Modelling and viewing users
 
-Successfully added the following structure:
+Successfully achieved the following:
 
-1. Site navigation
+1 User model
 
-2. Custom CSS
+2 User validations
 
-3. Partials
+3 Viewing users
 
-4. Test Integration
+4 Insecure passwords
 
-    $ bundle exec spork
+5 Secure passwords
 
-    $ bundle exec rspec spec/
+6 Gravatar and improved views
 
-5. Routing
-
-6. Named Routes
-
-7. Users Controller
-
-8. Sign Up URL
-
-NEXT PHASE: Modelling and viewing users
+NEXT PHASE: Sign Up, Sign In & Sign Out
 
 PREVIOUS PHASE: Filling in the layout
 
