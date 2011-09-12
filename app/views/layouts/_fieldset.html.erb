@@ -18,6 +18,12 @@
 
                   <span id="fieldset_body_middle">
 
+                      <section class="round">
+                        <% flash.each do |key, value| %>
+                          <div class="flash <%= key %>"><%= value %></div>
+                        <% end %>
+                      </section>
+
                       <div id="fieldset_content"><%= yield %>
                       <!-- end #fieldset_content --></div>
 
