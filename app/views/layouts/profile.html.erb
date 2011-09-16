@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title><%= title %></title>
+<%= csrf_meta_tag %>
+<%= stylesheet_link_tag 'profile', :media => 'screen' %>
+</head>
+
+<body>
+
+<div class="container">
+
+      <%= render 'layouts/header' %>
+
+      <%= render 'layouts/second_navigation' %>
+
+      <%= render 'layouts/space_navigation_content' %>
+
+      <div id="content_base">
+
+          <div id="content">
+
+            <%= render 'layouts/title' %>
+
+            <%= render 'layouts/profileset' %>
+
+            <%= render 'layouts/footer_top_gap' %>
+
+            <%= render 'layouts/available' %>
+
+            <%= render 'layouts/footer_top_gap' %>
+
+            <%= render 'layouts/footer' %>
+
+            <%= debug(params) if Rails.env.development? %>
+
+          <!-- end #content --></div>
+
+      <!-- end #content_base --></div>
+
+<!-- end .container --></div>
+
+</body>
+</html>
+

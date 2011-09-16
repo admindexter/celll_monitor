@@ -1,6 +1,19 @@
   <div id="login_div">
 
-      <div id="login_div_links_holder">Hi Guest, <%= link_to "Log in as a Celll-Monitor member", '#' %> | <%= link_to "Sign Up as a Celll-Monitor member", signup_path %>
+      <div id="login_div_links_holder">
+
+        <% if signed_in? %>
+          Hi <%= current_user.name %>,
+        <% else %>
+          Hi Guest,
+        <% end %>
+
+        <% if signed_in? %>
+          <%= link_to "Sign out", signout_path, :method => :delete %> | <%= link_to "Profile", current_user %>
+        <% else %>
+          <%= link_to "Sign in as a Celll-Monitor member", signin_path %> | <%= link_to "Sign Up as a Celll-Monitor member", signup_path %>
+        <% end %>
+
       <!-- end #login_div_links_holder --></div>
 
   <!-- end #login_div --></div>
