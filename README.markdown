@@ -18,7 +18,7 @@ Successfully achieved the following:
 
 NEXT PHASE: Updating, showing, and deleting users
 
-PREVIOUS PHASE: Modeling and viewing users, part II
+PREVIOUS PHASE: Modeling and viewing users
 
 
 # Celll-Monitor: deployment
