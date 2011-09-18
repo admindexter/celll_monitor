@@ -9,9 +9,13 @@
         <% end %>
 
         <% if signed_in? %>
-          <%= link_to "Sign out", signout_path, :method => :delete %> | <%= link_to "Profile", current_user %>
+          <%= link_to "Sign out", signout_path, :method => :delete %> |
         <% else %>
           <%= link_to "Sign in as a Celll-Monitor member", signin_path %> | <%= link_to "Sign Up as a Celll-Monitor member", signup_path %>
+        <% end %>
+
+        <% if signed_in? %>
+          <%= link_to "Settings", edit_user_path(current_user) %> | <%= link_to "Profile", current_user %>
         <% end %>
 
       <!-- end #login_div_links_holder --></div>

@@ -763,3 +763,18 @@ form.inline p {margin-bottom:0;}
 .success a {color:#264409;}
 .info a {color:#205791;}
 
+
+
+ul.users {
+  margin-top: 1em;
+}
+
+.users li {
+  list-style: none;
+}
+
+#space_below {
+  width:                           20px;
+  height:                          100px;
+}
+
