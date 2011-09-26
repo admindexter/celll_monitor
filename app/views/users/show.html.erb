@@ -38,11 +38,23 @@
       <br />
       <strong>Name</strong> <%= @user.name %><br />
       <strong>URL</strong>  <%= link_to user_path(@user), @user %>
+      <strong>Microposts</strong> <%= @user.microposts.count %>
     <!-- .user_sidebar_holder --></span>
 
   <!-- .user_sidebar --></span>
 
 <!-- .user_content --></div>
+
+    <div class="micropost_content">
+
+      <% unless @user.microposts.empty? %>
+        <table class="microposts" summary="User microposts">
+          <%= render @microposts %>
+        </table>
+        <%= will_paginate @microposts %>
+      <% end %>
+
+    <!-- .micropost_content --></div>
 
 <br />
 

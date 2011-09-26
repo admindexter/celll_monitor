@@ -366,7 +366,6 @@ body {
 .fieldset_small_body_content {
 	background: 									white url(../images/fieldset_body_middle.jpg) repeat-x;
 	float: 											left;
-	height: 											500px;
 	width: 											603px;
 	border: 											1px solid #e7e7e7;
 }
@@ -876,7 +875,7 @@ div.field, div.actions {
 }
 
 #error_explanation {
-  width:                                            400px;
+  width:                                            385px;
   border:                                           2px solid red;
   padding:                                          7px;
   padding-bottom:                                   12px;
@@ -929,4 +928,110 @@ form.inline p {margin-bottom:0;}
 .notice a {color:#514721;}
 .success a {color:#264409;}
 .info a {color:#205791;}
+
+
+
+
+h1.micropost {
+  margin-bottom: 0.3em;
+}
+
+table.microposts {
+  margin-top: 1em;
+}
+
+table.microposts tr {
+  height: 70px;
+}
+
+table.microposts tr td.gravatar {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  width: 50px;
+}
+
+table.microposts tr td.micropost {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  padding-top: 10px;
+}
+
+table.microposts tr td.micropost span.timestamp {
+  display: block;
+  font-size: 85%;
+  color: #666;
+}
+
+div.user_info img {
+  padding-right: 0.1em;
+}
+
+div.user_info a {
+  text-decoration: none;
+}
+
+div.user_info span.user_name {
+  position: absolute;
+}
+
+div.user_info span.microposts {
+  font-size: 80%;
+}
+
+form.new_micropost {
+  margin-bottom: 2em;
+}
+
+form.new_micropost textarea {
+  height: 4em;
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+.micropost_fieldset {
+    background:                     #ffffcc;
+    width:                          590px;
+    float:                          left;
+}
+
+.micropost_left {
+    width:                          410px;
+    background:                     white;
+    float:                          left;
+}
+
+.micropost_right {
+    background:                     #ffffcc;
+    width:                          170px;
+    float:                          left;
+    display:                        block;
+}
+
+.micropost_sidebar_left {
+    width:                          10px;
+    height:                         10px;
+    float:                          left;
+}
+
+.micropost_sidebar_right {
+    width:                          16mic0px;
+    float:                          left;
+}
+
+.micropost_header {
+    font-family: “Trebuchet MS”, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: normal;
+    letter-spacing: -1px;
+    line-height: 1.2em;
+}
 

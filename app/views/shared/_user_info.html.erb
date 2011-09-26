@@ -1,0 +1,21 @@
+<br />
+
+<span class="micropost_sidebar_left">
+<!-- end .micropost_sidebar_left --></span>
+
+<span class="micropost_sidebar_right">
+
+  <div class="user_info">
+    <a href="<%= user_path(current_user) %>">
+      <%= gravatar_for current_user, :size => 30 %>
+      <div class="user_name">
+        <%= current_user.name %>
+      </div>
+      <div class="microposts">
+        <%= pluralize(current_user.microposts.count, "micropost") %>
+      </div>
+    </a>
+  </div>
+
+<!-- end .micropost_sidebar_right --></span>
+

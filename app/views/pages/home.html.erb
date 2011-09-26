@@ -1,7 +1,43 @@
-    <h1>Sample App</h1>
-    <p>
-      This is the home page for the
-      <a href="http://www.celll-monitor.com/">Celll Monitor</a>
-      development application.
-    </p>
+<br />
+
+<br />
+
+<br />
+
+<% if signed_in? %>
+
+  <div class="micropost_fieldset">
+
+    <span class="micropost_left">
+
+      <div class="micropost_header">What's up?
+      <!-- end .micropost_header --></div>
+
+      <div class="micropost_style_form">
+        <%= render 'shared/micropost_form' %>
+      <!-- end .micropost_style_form --></div>
+
+      <div class="micropost_style_feed">
+        <%= render 'shared/feed' %>
+      <!-- end .micropost_style_feed --></div>
+
+    <!-- end .micropost_left --></span>
+
+    <span class="micropost_right">
+
+      <div class="micropost_sidebar">
+        <%= render 'shared/user_info' %>
+      <!-- end .micropost_sidebar --></div>
+
+    <!-- end .micropost_right --></span>
+
+  <!-- end .micropost_fieldset --></div>
+
+  <%= render 'layouts/footer_top_gap' %>
+
+<% else %>
+
+
+
+<% end %>
 
