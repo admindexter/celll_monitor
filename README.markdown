@@ -14,9 +14,7 @@ Tasks:
 
 ============================================================================================================
 
-NEXT PHASE: Members Articles
-
-PREVIOUS PHASE: Updating, showing, and deleting users
+PREVIOUS PHASE: Users Microposts
 
 
 # Celll-Monitor: deployment
