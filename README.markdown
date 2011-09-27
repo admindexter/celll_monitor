@@ -4,21 +4,19 @@ This is the development application for
 [*Celll-Monitor: Raising an army for the Lord*](http://celll-monitor.com/)
 by [Dextersmart Harry](http://dextersmart.com/).
 
-CURRENT PHASE: Updating, showing, and deleting users
+CURRENT PHASE: Apprentices / Mentors relationship
 
-Successfully achieved the following:
+Tasks:
+============================================================================================================
 
-    1.  Updating Users
+1. Create a column for role in the user model with default set to apprentice.
+2. Run test to verify that the profile page indicates apprentice when a user registers on the application.
 
-    2.  Protecting Pages
-
-    3.  Showing Users
-
-    4.  Destroying Users
+============================================================================================================
 
 NEXT PHASE: Members Articles
 
-PREVIOUS PHASE: Sign Up, Sign In & Sign Out
+PREVIOUS PHASE: Updating, showing, and deleting users
 
 
 # Celll-Monitor: deployment
