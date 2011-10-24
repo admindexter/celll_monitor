@@ -6,6 +6,10 @@ class PagesController < ApplicationController
     @title = "Home"
     @user = current_user
 
+    @random_sixteen_mentors = User.where({:role => :mentor}).limit(16).all.shuffle
+
+    @random_sixteen_apprentices = User.where({:role => :apprentice}).limit(16).all.shuffle
+
     if signed_in?
       @micropost = Micropost.new
       @feed_items = current_user.feed.paginate(:page => params[:page])

@@ -4,9 +4,17 @@ class SessionsController < ApplicationController
 
   def new
     @title = "Sign in"
+
+    @random_sixteen_mentors = User.where({:role => :mentor}).limit(16).all.shuffle
+
+    @random_sixteen_apprentices = User.where({:role => :apprentice}).limit(16).all.shuffle
   end
 
   def create
+    @random_sixteen_mentors = User.where({:role => :mentor}).limit(16).all.shuffle
+
+    @random_sixteen_apprentices = User.where({:role => :apprentice}).limit(16).all.shuffle
+
     user = User.authenticate(params[:session][:email],
                              params[:session][:password])
     if user.nil?

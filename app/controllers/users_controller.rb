@@ -6,6 +6,10 @@ class UsersController < ApplicationController
   layout 'general'
 
   def index
+    @random_sixteen_mentors = User.where({:role => :mentor}).limit(16).all.shuffle
+
+    @random_sixteen_apprentices = User.where({:role => :apprentice}).limit(16).all.shuffle
+
     @title = "All users"
     @users = User.paginate(:page => params[:page])
   end
@@ -14,6 +18,12 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @microposts = @user.microposts.paginate(:page => params[:page])
     @title = @user.name
+
+    @role = @user.role
+
+    @random_sixteen_mentors = User.where({:role => :mentor}).limit(16).all.shuffle
+
+    @random_sixteen_apprentices = User.where({:role => :apprentice}).limit(16).all.shuffle
 
     render :layout => 'profile'
   end

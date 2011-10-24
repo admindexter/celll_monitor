@@ -211,5 +211,21 @@ describe User do
         end
       end
   end
+
+  describe "role attribute" do
+
+     before(:each) do
+       @user = User.create!(@attr)
+       mentor_user = User.new(@attr.merge(:name => ""))
+     end
+
+     it "should respond to role" do
+       @user.should respond_to(:role)
+     end
+
+     it "should be an apprentice by default" do
+       @user.role.should == "apprentice"
+     end
+  end
 end
 
