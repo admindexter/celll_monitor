@@ -5,6 +5,10 @@ class MicropostsController < ApplicationController
   layout 'profile'
 
   def create
+    @random_sixteen_mentors = User.where({:role => :mentor}).limit(16).all.shuffle
+
+    @random_sixteen_apprentices = User.where({:role => :apprentice}).limit(16).all.shuffle
+
     @user = current_user
 
     @micropost = current_user.microposts.build(params[:micropost])

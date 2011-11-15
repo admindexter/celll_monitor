@@ -31,9 +31,17 @@ class UsersController < ApplicationController
   def new
     @user = User.new
     @title = "Sign up"
+
+    @random_sixteen_mentors = User.where({:role => :mentor}).limit(16).all.shuffle
+
+    @random_sixteen_apprentices = User.where({:role => :apprentice}).limit(16).all.shuffle
   end
 
   def create
+    @random_sixteen_mentors = User.where({:role => :mentor}).limit(16).all.shuffle
+
+    @random_sixteen_apprentices = User.where({:role => :apprentice}).limit(16).all.shuffle
+
     @user = User.new(params[:user])
     if @user.save
       sign_in @user
@@ -46,10 +54,18 @@ class UsersController < ApplicationController
   end
 
   def edit
+    @random_sixteen_mentors = User.where({:role => :mentor}).limit(16).all.shuffle
+
+    @random_sixteen_apprentices = User.where({:role => :apprentice}).limit(16).all.shuffle
+
     @title = "Edit user"
   end
 
   def update
+    @random_sixteen_mentors = User.where({:role => :mentor}).limit(16).all.shuffle
+
+    @random_sixteen_apprentices = User.where({:role => :apprentice}).limit(16).all.shuffle
+
     @user = User.find(params[:id])
     if @user.update_attributes(params[:user])
       flash[:success] = "Profile updated."
@@ -61,6 +77,10 @@ class UsersController < ApplicationController
   end
 
   def destroy
+    @random_sixteen_mentors = User.where({:role => :mentor}).limit(16).all.shuffle
+
+    @random_sixteen_apprentices = User.where({:role => :apprentice}).limit(16).all.shuffle
+
     User.find(params[:id]).destroy
     flash[:success] = "User destroyed."
     redirect_to users_path
